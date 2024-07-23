@@ -36,7 +36,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="h-full">
         <Navbar />
         <Outlet />
         <Footer />
