@@ -3,7 +3,7 @@ import "../css/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer flex lg:flex-row flex-col py-3 px-16 lg:px-48 w-full">
+    <footer className="footer flex lg:flex-row flex-col  py-3 px-16 lg:px-48 w-full backdrop-blur-sm">
       <div className="info-wrapper-footer">
         <div className="info">Concordia Game Development</div>
         <a

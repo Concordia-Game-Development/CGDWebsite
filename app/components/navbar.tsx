@@ -83,7 +83,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 ${
+      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${
         open ? "menu-open" : ""
       }`}
     >
@@ -122,7 +122,7 @@ const Navbar = () => {
                 className="nav border border-light-pink md:border-transparent"
               >
                 <img src={link.img} alt={link.alt} className="svg-icon" />
-                <h3 className="nav-item">{link.name}</h3>
+                <h4 className="nav-item">{link.name}</h4>
               </Link>
             </li>
           ))}

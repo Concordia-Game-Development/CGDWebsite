@@ -13,16 +13,24 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+        "3xl": "1783px",
+        "4xl": "1928px",
+      },
       colors: {
         "cgd-pink": "hsla(343, 61%, 52%, 0.8)",
+        "cgd-pfull": "hsla(343, 61%, 52%, 1)",
         "light-pink": "hsla(343, 73%, 68%, 0.8)",
+        "light-pfull": "hsla(343, 73%, 68%, 1)",
+        pink: "hsl(343, 100%, 92%)",
         "dark-purple": "#4e2f51",
         wh: "#f1f1f1a6",
+        "wh-full": "#f1f1f1",
+        "bg-tl": "hsl(343 90% 85%)",
+        "bg-br": "hsl(320 45% 95%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

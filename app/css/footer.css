@@ -1,7 +1,6 @@
 .footer {
   justify-content: space-between;
-  backdrop-filter: blur(2rem);
-  background-color: hsla(343, 61%, 52%, 0.8);
+  background-color: hsla(343, 61%, 59%);
   /* padding: 1rem 0; */
   /* padding-inline: clamp(2rem, 40vw, 10rem); */
 

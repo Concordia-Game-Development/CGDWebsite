@@ -15,7 +15,7 @@
 
 .background span {
   backface-visibility: hidden;
-  position: absolute;
+  position: fixed;
   animation: move;
   animation-duration: 21;
   animation-timing-function: linear;

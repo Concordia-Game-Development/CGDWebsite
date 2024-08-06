@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="header-footer">
+    <div className="header-footer flex-grow">
       <div className="page">
         <h1 className="gameclub sm:text-8xl text-5xl pb-11">
           Concordia Game Development
