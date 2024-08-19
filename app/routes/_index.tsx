@@ -20,7 +20,7 @@ export default function Index() {
           Concordia Game Development
         </h1>
       </div>
-      <div className="background h-full">
+      <div className="background h-full fixed">
         <span>
           <img
             src={cgdpink}
