@@ -1,8 +1,36 @@
+.sponsor-page {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+  padding-top: clamp(6rem, 8vw, 10rem);
+}
+
+.sponsor-page-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 1rem;
+}
+
+.sponsor-page + .footer .social-wrapper-footer {
+  min-width: 0;
+}
+
+.sponsor-page + .footer .email {
+  overflow-wrap: anywhere;
+}
+
 .sponsor-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding-bottom: 2rem;
   gap: 5rem;
 
@@ -33,14 +61,24 @@
 }
 
 .sponsortext {
-
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
   font-family: "Corbert", sans-serif;
   text-align: center;
-  padding: 0 16vw;
+  padding: 0 clamp(1rem, 16vw, 16rem);
   color: #532d53;
   font-weight: bold;
 
   animation: sponsor-text 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s both;
+}
+
+.sponsor-container > .button,
+.sponsor-container button {
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
 }
 
 .riseup {

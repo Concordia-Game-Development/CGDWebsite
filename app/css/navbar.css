@@ -23,6 +23,9 @@
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: clip;
   z-index: 2;
 
   .page-links {
@@ -30,6 +33,7 @@
     align-items: center;
     text-align: center; */
     height: fit-content;
+    min-width: 0;
     .nav {
       display: flex;
       flex-direction: row;
@@ -83,6 +87,31 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .navbar > div {
+    min-width: 0;
+  }
+
+  .navbar .page-links {
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .navbar .page-links li,
+  .navbar .page-links .nav {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .navbar .page-links .nav-item {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 .socials-menu {
   .menu-svg {
     aspect-ratio: 1;

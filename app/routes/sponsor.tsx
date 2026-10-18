@@ -18,9 +18,9 @@ export const meta: MetaFunction = () => {
 
 export default function DashboardSponsor() {
   return (
-    <div>
+    <div className="sponsor-page">
       <ConstructionCard show={false} />
-      <div className="page">
+      <div className="sponsor-page-content">
         <h1 className="sm:text-8xl text-6xl pb-11 text-center text-dark-purple">
         Sponsorship at CGD
         </h1>
