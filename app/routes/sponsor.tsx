@@ -21,8 +21,8 @@ export default function DashboardSponsor() {
     <div className="sponsor-page">
       <ConstructionCard show={false} />
       <div className="sponsor-page-content">
-        <h1 className="sm:text-8xl text-6xl pb-11 text-center text-dark-purple">
-        Sponsorship at CGD
+        <h1 className="text-[clamp(2.25rem,8vw,6rem)] leading-tight pb-11 text-center text-dark-purple">
+          Sponsorship at CGD
         </h1>
         <div className="sponsor-container">
           {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
