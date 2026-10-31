@@ -1,23 +1,48 @@
-# Welcome to CGDWebsite!
+# Game Developement Concordia Website
+Welcome to the Game Developement Concordia website!
 
-- [Remix Docs](https://remix.run/docs)
+This repository contains source code for the CGD website. 
+It is built using TypeScript and maintained by the Tech team of CGD.
+
+Live site: https://www.concordiagamedev.ca/
 
 ## Initial Setup
-Clone the repository to your local drive.
-In an integrated terminal on the root folder of the repository, run `npm install`. Make sure you have node installed on your machine beforehand.
+Make sure you have node.js installed on your machine beforehand.
+
+1. Clone the repository to your local machine
+2. Open terminal in root folder of the project
+3. Install dependencies by running:
+    ```sh
+    npm install
+    ```
 
 ## Development
 
-From your terminal:
+To start the local developement server, from your terminal, run:
 
 ```sh
 npm run dev
 ```
+The terminal will provide local URL where you can make changes to the website locally.
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Contribution
+When contributing to the website:
+- **Create a Branch**: Always create a branch for your changes named after the issue you are working on.
+- **Test your changes**: Make and test your changes locally before submitting them.
+- **Commit and Push**: Commit and push your changes.
+- **Open a Pull Request**: Open a pull request, you will need at least one review before merging to main.
+- **When reviewing someone's code**, make sure to properly review both the code itself and its deployement. Check that the changes work as expected and the rest of the website has not been affected.
+
+Please keep code consistent with existing project conventions, when working with components, styling, file organization.
 
 ## Deployment
+This repository is connected to Vercel for automatic deployement.
 
-Just commit your changes to main as the Github repo is already linked to the Vercel website host.
+**Production**: Changes merged onto main will trigger a production deployement on vercel, it will update the live website in 30 seconds or so.
 
-and click on this link to see all the changes: concordiagamedev.vercel.app
+## Project structure
+Project structure is currently undergoing improvements. Some directories and naming conventions may be inconsistent as a result of previous developement.
+Improving the project structure is a high priority.
+
+
+
