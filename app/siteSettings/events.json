@@ -5,7 +5,7 @@
     "date": "September 8th, 2026  11PM-5PM",
     "description": "Kick off the first day of school with Esports Concordia and the Concordia Game Development Club at Meet & Geek!",
     "location": "4th Space, Concordia University, 1400 Maisonneuve Blvd W, Montreal, QC H3G 1M8"
-  },  
+  },
   {
     "id": 1,
     "title": "Student Game Dev Summit 2026",
@@ -215,5 +215,13 @@
         "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe"
       }
     ]
+  },
+  {
+    "id": 17,
+    "title": "Cosmic Jam 2026",
+    "jampage": "/cosmicjam",
+    "date": "Oct 9 - 11th 2026",
+    "description": "Hosted by Concordia Game Development, Cosmic Jam is a 48-hour game jam.",
+    "location": "1455 Blvd. De Maisonneuve Ouest, Montreal, QC H3G 1M8, Canada"
   }
 ]

@@ -210,6 +210,22 @@ export default function CosmicJam() {
       <Winners winners={cosmicJamWinners} />
         <PhotoGallery gallery={cosmicJamGallery} />
         <PartnersSection partners={cosmicJamPartners} />
+        <section className="max-w-5xl mx-auto mb-24 px-6 text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
+            Special Thanks
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            A huge thank you to Ubisoft Montreal and Michel Kunta for their
+            support of Cosmic Jam and for welcoming our community. We
+            couldn&apos;t have done it without you!
+          </p>
+          <img
+            src="/assets/CosmicJam/UbisoftThanks.jpg"
+            alt="Cosmic Jam participants with Ubisoft Montreal"
+            className="block w-full max-w-2xl mx-auto rounded-2xl border-[3px] border-white shadow-lg"
+            loading="lazy"
+          />
+        </section>
       </div>
     </div>
   );
