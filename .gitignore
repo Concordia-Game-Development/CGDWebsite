@@ -6,3 +6,12 @@ node_modules
 .env
 .DS_Store
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local secrets
+.env
+.env.*
+!.env.example
