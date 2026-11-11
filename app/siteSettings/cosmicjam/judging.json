@@ -2,13 +2,36 @@
   "introduction": "Judging details for Cosmic Jam will be announced soon.",
   "process": "",
   "criteria": [
-    { "name": "", "max": 5 },
-    { "name": "", "max": 5 },
-    { "name": "", "max": 5 }
+    {
+      "name": "",
+      "max": 5
+    },
+    {
+      "name": "",
+      "max": 5
+    },
+    {
+      "name": "",
+      "max": 5
+    }
   ],
   "awards": [
-    { "name": "", "prize": "Prize TBD" },
-    { "name": "", "prize": "Prize TBD" }
+    {
+      "name": "1st Place",
+      "prize": "$50 Steam Gift Card"
+    },
+    {
+      "name": "2nd Place",
+      "prize": "$25 Steam Gift Card"
+    },
+    {
+      "name": "3rd Place",
+      "prize": "$25 Steam Gift Card"
+    },
+    {
+      "name": "All Winning Teams",
+      "prize": "Special Cosmic Jam Pins"
+    }
   ],
   "prizeImage": "/assets/Shrekathon/winnerprize.png",
   "prizeImageAlt": "Cosmic Jam prize placeholder"

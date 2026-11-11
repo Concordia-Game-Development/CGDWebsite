@@ -2,6 +2,8 @@ import { shrekathonWinners } from "~/components/game-jam/config";
 import type { Winner } from "~/components/game-jam/types";
 
 export default function Winners({ winners = shrekathonWinners }: { winners?: Winner[] }) {
+  // Centre the podium when there are only 3 winners (the layout fits 4 columns)
+  const centerOffset = winners.length === 3 ? 80 : 0;
   return (
     <section id="game-jam-winners" className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold">
       <h2 className="text-4xl font-bold text-dark-purple mb-6">Top Winners 🏆</h2>
@@ -13,7 +15,7 @@ export default function Winners({ winners = shrekathonWinners }: { winners?: Win
               { x: 210, labelX: 280, fill: "#FAC775", stroke: "#BA7517" },
               { x: 370, labelX: 440, fill: "#F5C4B3", stroke: "#993C1D" },
               { x: 530, labelX: 600, fill: "#F5C4B3", stroke: "#993C1D" },
-            ][index] ?? { x: 45 + index * 160, labelX: 117 + index * 160, fill: "#D3D1C7", stroke: "#5F5E5A" };
+            ].map((p) => ({ ...p, x: p.x + centerOffset, labelX: p.labelX + centerOffset }))[index] ?? { x: 45 + index * 160, labelX: 117 + index * 160, fill: "#D3D1C7", stroke: "#5F5E5A" };
             return (
               <g key={winner.category} className="group cursor-pointer">
                 <rect className={`winner-podium ${index === 1 ? "winner-first" : ""}`} x={positions.x} y={index === 1 ? 110 : 170} width="140" height={index === 1 ? 190 : 130} rx="4" fill={positions.fill} stroke={positions.stroke} strokeWidth="0.5" />

@@ -4,7 +4,6 @@ import { Link } from "@remix-run/react";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
-import upcomingevents from "~/siteSettings/upcomingevents.json";
 import ggj2024winner from "assets/icons/gj2024_winner.png";
 import cgdjam2023winner from "assets/icons/awayback.png";
 import cgdjam2022winner from "assets/icons/smokingkills.png";
@@ -67,16 +66,9 @@ export default function DashboardEvents() {
               Upcoming Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-6 w-full px-4 sm:px-6 pt-4 pb-8">
-              <GameJamEvent
-                title={upcomingevents[0].title}
-                jampage={upcomingevents[0].jampage}
-                date={upcomingevents[0].date}
-                description={upcomingevents[0].description}
-                location={upcomingevents[0].location}
-                theme={upcomingevents[0].theme}
-                imageD={CosmicJam}
-                imageM={CosmicJam}
-              />
+              <p className="text-xl text-dark-purple text-center">
+                No upcoming events right now. Stay tuned!
+              </p>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="recurring-events">
@@ -100,6 +92,16 @@ export default function DashboardEvents() {
               Past Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-6 w-full px-4 sm:px-6 pt-4 pb-8">
+              <GameJamEvent
+                title={events[17].title}
+                jampage={events[17].jampage}
+                date={events[17].date}
+                description={events[17].description}
+                location={events[17].location}
+                imageD={CosmicJam}
+                imageM={CosmicJam}
+              />
+
               <EventCard
                 title={events[0].title}
                 date={events[0].date}

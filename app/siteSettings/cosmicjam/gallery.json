@@ -1,5 +1,12 @@
 {
   "title": "Photo Gallery",
   "eventName": "Cosmic Jam",
-  "images": ["/assets/NewEvents/CosmicJam_Square.png"]
+  "images": [
+    "/assets/CosmicJam/CosmicJam1.jpg",
+    "/assets/CosmicJam/CosmicJam2.jpg",
+    "/assets/CosmicJam/CosmicJam3.jpg",
+    "/assets/CosmicJam/CosmicJam4.jpg",
+    "/assets/CosmicJam/CosmicJam5.jpg",
+    "/assets/CosmicJam/CosmicJam6.jpg"
+  ]
 }
