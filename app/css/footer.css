@@ -1,4 +1,5 @@
 .footer {
+  margin-top: auto;
   justify-content: space-between;
   background-color: hsl(343 61% 59%);
   /* padding: 1rem 0; */
