@@ -44,5 +44,18 @@ This repository is connected to Vercel for automatic deployement.
 Project structure is currently undergoing improvements. Some directories and naming conventions may be inconsistent as a result of previous developement.
 Improving the project structure is a high priority.
 
-
+```text
+CGDWebsite/
+├── .github/workflows/   # GitHub Actions automation
+├── app/
+│   ├── components/      # Reusable React components
+│   ├── css/             # Website styling
+│   ├── lib/             # Utility functions and hooks
+│   ├── routes/          # Website pages
+│   └── siteSettings/    # Website content and JSON data
+├── assets/              # Fonts, icons, and images
+├── public/              # Public static assets 
+├── scripts/             # Automation scripts
+└── package.json         # Dependencies and npm scripts
+```
 
