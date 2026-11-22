@@ -1,0 +1,16 @@
+.merch-page {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+  padding-top: clamp(6rem, 8vw, 10rem);
+}
+
+.merch-page + .footer .social-wrapper-footer {
+  min-width: 0;
+}
+
+.merch-page + .footer .email {
+  overflow-wrap: anywhere;
+}

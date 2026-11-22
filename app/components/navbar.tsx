@@ -1,7 +1,7 @@
 import "app/css/navbar.css";
 import { Link } from "@remix-run/react";
 import CGDLogo from "assets/icons/cgd-transparent.png";
-import homeicon from "assets/icons/home-icon.svg";
+import merchicon from "assets/icons/merch-icon.svg";
 import abouticon from "assets/icons/abtus-nav.svg";
 import eventsicon from "assets/icons/event-icon.svg";
 import sponsorsicon from "assets/icons/sponsor-icon.svg";
@@ -18,12 +18,6 @@ import controllericon from "../components/getStartedPage/controller.png"
 const Navbar = () => {
   // page-links and social-menu
   let Links = [
-    {
-      name: "Home",
-      link: "/",
-      img: homeicon,
-      alt: "home icon that brings you back to gamedev main page",
-    },
     {
       name: "About",
       link: "/about",
@@ -42,11 +36,18 @@ const Navbar = () => {
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
     },
-    { name: "Get started in Game Dev",
+    {
+      name: "Get started in Game Dev",
       link: "/getStartedPage",
       img: controllericon,
-      alt: "icon that brings you to the gamedev get started page"
-    }
+      alt: "icon that brings you to the gamedev get started page",
+    },
+    {
+      name: "Merch",
+      link: "/merch",
+      img: merchicon,
+      alt: "icon that brings you to the gamedev merch page",
+    },
   ];
   let socials = [
     // {
@@ -108,7 +109,7 @@ const Navbar = () => {
       <div className="w-full max-w-[1440px] mx-auto lg:flex lg:items-center lg:justify-between lg:px-4">
         {/* logo */}
         <div className="flex flex-row justify-between lg:flex-none lg:min-w-[88px]">
-          <Link to="/" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu} aria-label="Home" title="Home">
             <img
               src={CGDLogo}
               alt="Concordia-Game-Dev club logo"
