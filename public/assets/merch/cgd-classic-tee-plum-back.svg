@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff7eb3"/>
+      <stop offset="100%" stop-color="#ff758c"/>
+    </linearGradient>
+    <filter id="shadow" x="150" y="60" width="500" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#4e2f51" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="670" cy="120" r="100" fill="#ffffff" fill-opacity="0.12"/>
+  <circle cx="130" cy="480" r="110" fill="#ffffff" fill-opacity="0.12"/>
+  <g filter="url(#shadow)">
+    <path d="M322 108 C355 122 445 122 478 108 L595 162 L630 250 L545 278 L525 220 L525 470 C525 480 517 488 507 488 L293 488 C283 488 275 480 275 470 L275 220 L255 278 L170 250 L205 162 Z" fill="#770b75" stroke="#5b0759" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M326 112 C360 128 440 128 474 112" stroke="#9d2b9b" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(400 260)">
+    <rect x="-86" y="-68" width="172" height="136" rx="22" fill="#fdf2f4" fill-opacity="0.12" stroke="#fdf2f4" stroke-opacity="0.35" stroke-width="2"/>
+    <polygon points="0,-46 28,-30 28,2 0,18 -28,2 -28,-30" fill="#f9a8d4" fill-opacity="0.95"/>
+    <text x="0" y="42" text-anchor="middle" fill="#fdf2f4" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" letter-spacing="2">CONCORDIA</text>
+    <text x="0" y="61" text-anchor="middle" fill="#f9a8d4" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14" letter-spacing="2.5">GAME DEV</text>
+  </g>
+  <rect x="295" y="530" width="210" height="36" rx="18" fill="#ffffff" fill-opacity="0.85"/>
+  <text x="400" y="553" text-anchor="middle" fill="#4e2f51" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" letter-spacing="1.5">BACK • CGD PLUM</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffe26a"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <filter id="laptopShadow" x="95" y="80" width="610" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#4e2f51" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g filter="url(#laptopShadow)">
+    <rect x="130" y="105" width="540" height="370" rx="28" fill="#e5e7eb" stroke="#d1d5db" stroke-width="4"/>
+    <rect x="148" y="123" width="504" height="334" rx="18" fill="#f3f4f6"/>
+  </g>
+  <!-- Scattered stickers on laptop lid -->
+  <g transform="translate(260 235) rotate(-14)">
+    <rect x="-58" y="-42" width="116" height="84" rx="24" fill="#4e2f51" stroke="#ffffff" stroke-width="7"/>
+    <rect x="-34" y="-6" width="24" height="8" rx="2" fill="#f9a8d4"/>
+    <rect x="-26" y="-14" width="8" height="24" rx="2" fill="#f9a8d4"/>
+    <circle cx="20" cy="-8" r="6" fill="#62e3f5"/>
+    <circle cx="32" cy="4" r="6" fill="#ffe26a"/>
+  </g>
+  <g transform="translate(425 220) rotate(9)">
+    <polygon points="0,-54 48,-27 48,27 0,54 -48,27 -48,-27" fill="#ec4899" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
+    <polygon points="0,-54 48,-27 0,0 -48,-27" fill="#f9a8d4"/>
+    <polygon points="0,0 48,-27 48,27 0,54" fill="#be185d"/>
+  </g>
+  <g transform="translate(555 315) rotate(-8)">
+    <rect x="-52" y="-52" width="104" height="104" rx="28" fill="#770b75" stroke="#ffffff" stroke-width="7"/>
+    <polygon points="0,-28 8,-9 28,-9 12,4 18,24 0,12 -18,24 -12,4 -28,-9 -8,-9" fill="#ffe26a"/>
+  </g>
+  <g transform="translate(350 365) rotate(-5)">
+    <rect x="-74" y="-34" width="148" height="68" rx="34" fill="#62e3f5" stroke="#ffffff" stroke-width="7"/>
+    <text x="0" y="7" text-anchor="middle" fill="#4e2f51" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" letter-spacing="2">WEAR JAM</text>
+  </g>
+  <rect x="310" y="530" width="180" height="36" rx="18" fill="#ffffff" fill-opacity="0.88"/>
+  <text x="400" y="553" text-anchor="middle" fill="#4e2f51" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="13" letter-spacing="1.5">DETAIL VIEW</text>
+</svg>
