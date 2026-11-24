@@ -1,6 +1,7 @@
 .footer {
+  margin-top: auto;
   justify-content: space-between;
-  background-color: hsla(343, 61%, 59%);
+  background-color: hsl(343 61% 59%);
   /* padding: 1rem 0; */
   /* padding-inline: clamp(2rem, 40vw, 10rem); */
 
@@ -49,4 +50,3 @@
     text-decoration: none;
   }
 }
-

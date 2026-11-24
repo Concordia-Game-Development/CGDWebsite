@@ -1,0 +1,137 @@
+.cosmic-jam-page {
+  color: #fff7fb;
+}
+
+.cosmic-jam-page .text-dark-purple {
+  color: #ffd84d;
+}
+
+.cosmic-jam-page .text-gray-700,
+.cosmic-jam-page .text-gray-800,
+.cosmic-jam-page .text-gray-600,
+.cosmic-jam-page .text-gray-500 {
+  color: #f8dce9;
+}
+
+.cosmic-jam-page .text-gray-700\/90 {
+  color: #fff7fb;
+}
+
+.cosmic-jam-page .bg-dark-purple {
+  background-color: #e91478;
+}
+
+.cosmic-jam-page .border-dark-purple {
+  border-color: #ff3b9d;
+}
+
+.cosmic-jam-page .bg-white\/85 {
+  background-color: rgba(34, 5, 39, 0.88);
+  border: 1px solid rgba(255, 216, 77, 0.25);
+}
+
+.cosmic-jam-page .bg-white\/70 {
+  background-color: rgba(35, 5, 40, 0.78);
+}
+
+.cosmic-jam-page .bg-white\/50 {
+  background-color: rgba(35, 5, 40, 0.72);
+}
+
+.cosmic-jam-page .border-white\/70 {
+  border-color: rgba(255, 216, 77, 0.4);
+}
+
+.cosmic-jam-page .border-dark-purple\/10 {
+  border-color: rgba(255, 216, 77, 0.3);
+}
+
+.cosmic-jam-page .bg-dark-purple\/25 {
+  background-color: rgba(255, 216, 77, 0.3);
+}
+
+.cosmic-jam-page .bg-dark-purple\/50 {
+  background-color: rgba(255, 216, 77, 0.65);
+}
+
+.cosmic-jam-page .text-dark-purple\/80 {
+  color: #ffe98a;
+}
+
+.cosmic-jam-page .bg-white {
+  background-color: #fff7fb;
+}
+
+.cosmic-jam-page .border-white {
+  border-color: rgba(255, 247, 251, 0.9);
+}
+
+.cosmic-jam-page .bg-\[\#2b182d\] {
+  background-color: #16051f;
+}
+
+.cosmic-jam-page .bg-\[rgba\(130\,180\,92\,0\.18\)\] {
+  background-color: rgba(233, 20, 120, 0.3);
+}
+
+.cosmic-jam-page .bg-\[linear-gradient\(135deg\,rgba\(255\,255\,255\,0\.88\)\,rgba\(246\,232\,239\,0\.92\)\,rgba\(232\,245\,224\,0\.88\)\)\] {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 7, 49, 0.96),
+    rgba(72, 8, 55, 0.92),
+    rgba(7, 9, 67, 0.94)
+  );
+}
+
+.cosmic-jam-page .bg-\[linear-gradient\(135deg\,rgba\(255\,255\,255\,0\.9\)\,rgba\(246\,232\,239\,0\.9\)\,rgba\(232\,245\,224\,0\.88\)\)\] {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 7, 49, 0.96),
+    rgba(72, 8, 55, 0.92),
+    rgba(7, 9, 67, 0.94)
+  );
+}
+
+.cosmic-jam-page .shadow-\[0_24px_80px_rgba\(78\,47\,81\,0\.16\)\] {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.cosmic-jam-page .shadow-\[0_16px_40px_rgba\(78\,47\,81\,0\.2\)\] {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.cosmic-jam-page a {
+  color: #ffe98a;
+}
+
+.cosmic-jam-page a:hover {
+  color: #ff70b9;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-podium {
+  fill: #390d4d;
+  stroke: #ff3b9d;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-podium.winner-first {
+  fill: #6c174f;
+  stroke: #ffd84d;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-name-box {
+  fill: #16051f;
+  stroke: #ff70b9;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-name,
+.cosmic-jam-page #game-jam-winners .winner-category {
+  fill: #fff7fb;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-link {
+  fill: #ffe98a;
+}
+
+.cosmic-jam-page #game-jam-winners .winner-base {
+  fill: #e91478;
+}

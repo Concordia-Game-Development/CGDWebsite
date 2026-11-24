@@ -1,0 +1,39 @@
+[
+  {
+    "day": "Day 1: Friday (October 9th)",
+    "events": [
+      { "time": "4:30pm", "title": "Doors Open" },
+      { "time": "4:30pm - 5:30pm", "title": "Check-in" },
+      { "time": "5:30pm - 6:00pm", "title": "Opening Ceremony" },
+      { "time": "6:00pm - 6:30pm", "title": "Team Making Time" },
+      { "time": "6:30pm - 7:30pm", "title": "Supper" },
+      { "time": "7:30pm - 9:30pm", "title": "Dev Time" },
+      { "time": "10:00pm", "title": "Doors Close" }
+    ]
+  },
+  {
+    "day": "Day 2: Saturday (October 10th)",
+    "events": [
+      { "time": "10:00am", "title": "Doors Open" },
+      { "time": "10:00am - 12:00pm", "title": "Dev Time" },
+      { "time": "12:00pm - 1:00pm", "title": "Lunch" },
+      { "time": "1:00pm - 6:00pm", "title": "Dev Time" },
+      { "time": "6:00pm - 7:00pm", "title": "Supper" },
+      { "time": "7:00pm - 9:00pm", "title": "Dev Time" },
+      { "time": "10:00pm", "title": "Doors Close" }
+    ]
+  },
+  {
+    "day": "Day 3: Sunday (October 11th)",
+    "events": [
+      { "time": "10:00am", "title": "Doors Open" },
+      { "time": "10:00am - 12:00pm", "title": "Dev Time" },
+      { "time": "12:00pm - 1:00pm", "title": "Lunch" },
+      { "time": "1:00pm - 5:00pm", "title": "Dev Time" },
+      { "time": "5:00pm", "title": "Submission Deadline" },
+      { "time": "6:00pm - 8:00pm", "title": "Gaming Time" },
+      { "time": "8:00pm - 9:00pm", "title": "Closing Ceremony" },
+      { "time": "10:00pm", "title": "Doors Close" }
+    ]
+  }
+]

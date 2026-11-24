@@ -1,8 +1,26 @@
 {
   "homeGames": [
     {
-      "name": "Away Back",
+      "name": "Ultimate journey through partial destruction of the universe (Alert Alert Black hole... ) - Beta 16.7",
       "id": "0",
+      "info": "CosmicJam '26 - 1st Place",
+      "gamelink": "https://stoneplant725.itch.io/ultimate-journey-through-partial-destruction-of-the-universe-alert-alert-black-h",
+      "target": "_blank",
+      "img": "assets/homeGames/BlackHole.png",
+      "alt": "Ultimate journey through partial destruction of the universe preview pic"
+    },
+    {
+      "name": "JumpSHREK",
+      "id": "1",
+      "info": "Shrekathon '26 - 1st Place",
+      "gamelink": "https://devnameddarcy.itch.io/jumpshrek",
+      "target": "_blank",
+      "img": "assets/homeGames/JumpSHREK.png",
+      "alt": "JumpSHREK preview pic"
+    },
+    {
+      "name": "Away Back",
+      "id": "2",
       "info": "CGD Jam Fall '23 - 1st Place",
       "gamelink": "https://time-moth.itch.io/away-back",
       "target": "_blank",
@@ -11,7 +29,7 @@
     },
     {
       "name": "Brainrot",
-      "id": "1",
+      "id": "3",
       "info": "Global Game Jam '24 - 1st Place",
       "gamelink": "https://globalgamejam.org/games/2024/brainrot-0",
       "target": "_blank",
@@ -20,7 +38,7 @@
     },
     {
       "name": "Mandrake Soul Orchestra",
-      "id": "2",
+      "id": "4",
       "info": "Global Game Jam '23 - 1st Place",
       "gamelink": "https://selfmadegoblin.itch.io/mandrake-soul-orchestra",
       "target": "_blank",
@@ -29,7 +47,7 @@
     },
     {
       "name": "The Are Not Real People",
-      "id": "3",
+      "id": "5",
       "info": "CGD Jam Fall '23",
       "gamelink": "https://monsanima.itch.io/these-are-not-real-people",
       "target": "_blank",
@@ -38,7 +56,7 @@
     },
     {
       "name": "CASH CLOWN",
-      "id": "4",
+      "id": "6",
       "info": "Global Game Jam '24",
       "gamelink": "https://kindaokev.itch.io/cash-clown",
       "target": "_blank",
@@ -47,7 +65,7 @@
     },
     {
       "name": "Quantum Cat-Astrophe",
-      "id": "5",
+      "id": "7",
       "info": "CGD Jam Fall '22",
       "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe",
       "target": "_blank",

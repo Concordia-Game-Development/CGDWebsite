@@ -1,0 +1,19 @@
+{
+  "university": "Concordia University",
+  "building": "Henry F. Hall Building",
+  "introduction": "The Learnathon will take place at",
+  "rooms": [
+    { "day": "Saturday", "room": "H411" },
+    { "day": "Sunday", "room": "H937" }
+  ],
+  "labs": [
+    { "room": "817", "type": "Game Maker" },
+    { "room": "819", "type": "Game Maker" },
+    { "room": "847", "type": "Game Maker" },
+    { "room": "849", "type": "Game Maker" },
+    { "room": "962", "type": "Unity" },
+    { "room": "966", "type": "Unity" }
+  ],
+  "note": "To make sure everyone has space to build and collaborate, these lab rooms will be open throughout the event.",
+  "workstationFootnote": ""
+}

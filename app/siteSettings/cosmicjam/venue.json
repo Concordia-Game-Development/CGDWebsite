@@ -1,0 +1,20 @@
+{
+  "university": "Concordia University (SGW Campus)",
+  "building": "Henry F. Hall Building",
+  "introduction": "Cosmic Jam will take place at",
+  "rooms": [
+    { "day": "Friday", "room": "Orientation: Room H820." },
+    { "day": "Saturday", "room": "Registration & Catering: Room H937." },
+    { "day": "Sunday", "room": "Registration & Catering: Room H937." }
+  ],
+  "labs": [
+    { "room": "H962 & H966", "type": "Workstations (FRI-SAT)." },
+    { "room": "H962, H966, H929, H921", "type": "Showcase Rooms (SUN)." }
+  ],
+  "note": "Please consult the event floor plan for the exact locations of the workstations and showcase rooms.",
+  "workstationFootnote": "",
+  "floorPlan": {
+    "src": "/assets/CosmicJam/floorplan.png",
+    "alt": "Cosmic Jam floor plan showing the locations of the workstations and showcase rooms."
+  }
+}

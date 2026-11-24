@@ -1,0 +1,15 @@
+{
+  "title": "Photo Gallery",
+  "eventName": "Shrekathon",
+  "images": [
+    "/assets/Shrekathon/Shrekathon1.jpeg",
+    "/assets/Shrekathon/Shrekathon2.jpeg",
+    "/assets/Shrekathon/Shrekathon3.jpeg",
+    "/assets/Shrekathon/Shrekathon4.jpeg",
+    "/assets/Shrekathon/Shrekathon5.jpeg",
+    "/assets/Shrekathon/Shrekathon6.jpeg",
+    "/assets/Shrekathon/Shrekathon7.jpeg",
+    "/assets/Shrekathon/Shrekathon8.jpeg",
+    "/assets/Shrekathon/Shrekathon9.jpeg"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "day": "Day 1",
+    "events": [
+      { "time": "8:30 AM", "title": "Opening ceremony" },
+      { "time": "9:00 AM", "title": "Lecturers' 1st panel" },
+      { "time": "12:00 PM", "title": "Lunch time!" },
+      { "time": "1:00 PM", "title": "Lecturers' 2nd panel" },
+      { "time": "5:00 PM", "title": "Dinner time!" },
+      { "time": "6:00 PM", "title": "Panel EXTRA" },
+      { "time": "9:00 PM", "title": "Venue closes" }
+    ]
+  },
+  {
+    "day": "Day 2",
+    "events": [
+      { "time": "8:00 AM", "title": "Venue opens" },
+      { "time": "9:00 AM", "title": "Lecturers' 3rd panel" },
+      { "time": "11:00 AM", "title": "Brunch time!" },
+      { "time": "12:00 PM", "title": "Lecturers' 3rd panel (continue)" },
+      { "time": "1:00 PM", "title": "Lecturers' 4th panel" },
+      { "time": "4:00 PM", "title": "Final submit & closing" },
+      { "time": "5:00 PM", "title": "Show us your game!" }
+    ]
+  }
+]

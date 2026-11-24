@@ -1,0 +1,20 @@
+{
+  "introduction": "All judging will take place on the day of submission on Sunday. If participants wish to update their submissions in the following days, submissions will be reopened for 5 days after the jam ends. We only judge the version submitted on Sunday.",
+  "process": "Participants will be stationed at a workstation at the end of the jam and the judges will judge each team one by one.",
+  "criteria": [
+    { "name": "Art", "max": 5 },
+    { "name": "Programming", "max": 5 },
+    { "name": "Audio", "max": 5 },
+    { "name": "Theme", "max": 5 },
+    { "name": "Design", "max": 5 },
+    { "name": "Creativity", "max": 3 }
+  ],
+  "awards": [
+    { "name": "Overall Best Game (1st place only)", "prize": "Winner Pins & Humble Bundle?" },
+    { "name": "Best Theme Integration", "prize": "Winner Pins" },
+    { "name": "Best Technical Innovation", "prize": "Winner Pins" },
+    { "name": "Best Art Direction", "prize": "Winner Pins" }
+  ],
+  "prizeImage": "/assets/Shrekathon/winnerprize.png",
+  "prizeImageAlt": "Shrekathon winner prize"
+}

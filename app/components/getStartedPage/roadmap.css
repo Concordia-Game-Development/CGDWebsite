@@ -300,12 +300,12 @@
   outline-offset: 3px;
 }
 
-.roadmap-item-mint {
-  background: linear-gradient(180deg, #d1efd8 0%, #bce5c5 100%);
+.roadmap-item-pink {
+  background: linear-gradient(180deg, hsl(343, 100%, 92%) 0%, #f2c5d3 100%);
 }
 
-.roadmap-item-lilac {
-  background: linear-gradient(180deg, #ede4f8 0%, #e0d4f2 100%);
+.roadmap-item-plum {
+  background: linear-gradient(180deg, #fbe9f5 0%, #eadfea 100%);
 }
 
 .roadmap-item-meta {
@@ -314,7 +314,7 @@
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 0.6rem;
-  color: #573a61;
+  color: #532d53;
   font-family: "Corbert", sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
@@ -322,7 +322,7 @@
 
 .roadmap-item-title {
   margin: 0;
-  color: #301537;
+  color: #4e2f51;
   font-family: "League Spartan", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;

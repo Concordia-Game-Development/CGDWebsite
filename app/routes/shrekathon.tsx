@@ -1,25 +1,16 @@
 import type { MetaFunction } from "@remix-run/node";
-import Timetable from "../components/shrekathon/timetable";
-import Venue from "../components/shrekathon/venue";
+import Timetable from "../components/game-jam/Timetable";
+import Venue from "../components/game-jam/Venue";
 import Shrekathonjam from "assets/icons/Shrekathonjam.jpg"
 import { useState } from "react";
-import MentorsSection from "~/routes/MentorsCards";
-import SponsorsSection from "./SponsorCard";
-import Judging from "../components/shrekathon/judgingprizes"
-import Winners from "../components/shrekathon/winners";
+import MentorsSection from "~/components/game-jam/MentorsSection";
+import PartnersSection from "~/components/game-jam/PartnersSection";
+import Judging from "../components/game-jam/Judging"
+import Winners from "../components/game-jam/Winners";
+import PhotoGallery from "~/components/game-jam/PhotoGallery";
+import { shrekathonGallery } from "~/components/game-jam/config";
 
 const themeRevealVideo = "/assets/Shrekathon/theme-reveal-2026.mp4";
-const galleryImages = [
-  "/assets/Shrekathon/Shrekathon1.jpeg",
-  "/assets/Shrekathon/Shrekathon2.jpeg",
-  "/assets/Shrekathon/Shrekathon3.jpeg",
-  "/assets/Shrekathon/Shrekathon4.jpeg",
-  "/assets/Shrekathon/Shrekathon5.jpeg",
-  "/assets/Shrekathon/Shrekathon6.jpeg",
-  "/assets/Shrekathon/Shrekathon7.jpeg",
-  "/assets/Shrekathon/Shrekathon8.jpeg",
-  "/assets/Shrekathon/Shrekathon9.jpeg",
-];
 const themeLayersIdeas = [
   "Programming",
   "Art",
@@ -39,20 +30,6 @@ export const meta: MetaFunction = () => {
 };
 export default function Shrekathon() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
-
-  const showPreviousImage = () => {
-    setActiveGalleryIndex((currentIndex) =>
-      currentIndex === 0 ? galleryImages.length - 1 : currentIndex - 1
-    );
-  };
-
-  const showNextImage = () => {
-    setActiveGalleryIndex((currentIndex) =>
-      currentIndex === galleryImages.length - 1 ? 0 : currentIndex + 1
-    );
-  };
-
   return (
     <div className="relative px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br flex-grow overflow-hidden font-corbert">
       <header className="flex flex-col md:flex-row items-center justify-center gap-10 mb-24 max-w-6xl mx-auto">
@@ -198,85 +175,8 @@ export default function Shrekathon() {
       <Timetable />
       <Judging />
       <Winners />
-      <section className="max-w-6xl mx-auto mb-24 font-corbert font-bold">
-        <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6 text-center md:text-left">
-          Photo Gallery
-        </h2>
-
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-white/70 bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(246,232,239,0.9),rgba(232,245,224,0.88))] p-4 shadow-[0_24px_80px_rgba(78,47,81,0.16)] sm:p-6">
-          <div className="relative">
-            <img
-              src={galleryImages[activeGalleryIndex]}
-              alt={`Shrekathon photo ${activeGalleryIndex + 1}`}
-              className="h-[220px] w-full rounded-[1.5rem] bg-white object-contain shadow-[0_16px_40px_rgba(78,47,81,0.2)] sm:h-[320px] lg:h-[440px]"
-            />
-
-            <button
-              type="button"
-              onClick={showPreviousImage}
-              className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white transition hover:bg-black/65"
-              aria-label="Show previous Shrekathon photo"
-            >
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
-
-            <button
-              type="button"
-              onClick={showNextImage}
-              className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white transition hover:bg-black/65"
-              aria-label="Show next Shrekathon photo"
-            >
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="mt-4 flex items-center justify-between gap-4">
-            <p className="text-sm uppercase tracking-[0.18em] text-dark-purple/80">
-              Photo {activeGalleryIndex + 1} of {galleryImages.length}
-            </p>
-
-            <div className="flex gap-2">
-              {galleryImages.map((src, index) => (
-                <button
-                  key={src}
-                  type="button"
-                  onClick={() => setActiveGalleryIndex(index)}
-                  className={`h-3 w-3 rounded-full transition ${
-                    index === activeGalleryIndex
-                      ? "bg-dark-purple scale-110"
-                      : "bg-dark-purple/25 hover:bg-dark-purple/50"
-                  }`}
-                  aria-label={`Show Shrekathon photo ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <SponsorsSection />
+      <PhotoGallery gallery={shrekathonGallery} />
+      <PartnersSection />
     </div>
   );
 }

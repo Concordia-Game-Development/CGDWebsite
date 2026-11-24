@@ -22,6 +22,7 @@ import { ClientOnly } from "remix-utils/client-only";
 import { Link } from "@remix-run/react";
 import { Icon } from "@iconify/react";
 import { buttonVariants } from "@/components/ui/button";
+import { useAverageColor } from "~/lib/useAverageColor";
 
 // The props are taken from siteSettings/events.json imported on the events.tsx page
 interface EventProps {
@@ -50,31 +51,45 @@ const GameJamEvent: React.FC<EventProps> = ({
   winners,
 }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isExternalJamPage = jampage?.startsWith("http");
+  const frameColorD = useAverageColor(imageD);
+  const frameColorM = useAverageColor(imageM || imageD);
 
   if (isDesktop) {
     // Desktop View
     return (
-      <div className="flex flex-col bg-wh border border-wh/80 rounded-xl md:p-10 p-7 w-full relative">
-        <div className="flex md:gap-10">
-          <img
-            src={imageD}
-            alt={title}
-            className="object-contain aspect-[3/2] hidden md:block w-36 h-24 shrink-0 rounded-md"
-          />
-          <div className="flex flex-col justify-center gap-4">
+      <div className="group flex flex-col bg-white/50 backdrop-blur-xl border border-[#f2c5d3]/70 rounded-3xl p-5 md:py-6 md:px-6 w-full relative hover:-translate-y-1 hover:shadow-xl hover:rotate-[0.5deg] hover:z-10 transition-all duration-300">
+        <div className="flex items-center md:gap-6 lg:gap-8">
+          <div
+            className="overflow-hidden rounded-2xl aspect-[3/2] hidden md:block md:w-56 lg:w-64 xl:w-96 shrink-0 relative ring-1 ring-white/50 shadow-md transition-colors duration-300"
+            style={{ backgroundColor: frameColorD }}
+          >
+            <img
+              src={imageD}
+              alt={title}
+              className="w-full h-full object-contain group-hover:scale-110 hover:scale-110 transition duration-300"
+            />
+          </div>
+          <div className="flex flex-col justify-center gap-4 text-left">
             <div>
-              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left hover:underline">
-                <a href={jampage} target="_blank">
+              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left hover:underline uppercase">
+                <a
+                  href={jampage}
+                  target={isExternalJamPage ? "_blank" : undefined}
+                  rel={isExternalJamPage ? "noopener noreferrer" : undefined}
+                >
                   {title}
                 </a>
               </h2>
-              <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
+              <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold text-left">
                 {description}
               </h4>
             </div>
-            <p className="date md:text-lg text-sm text-dark-purple/80 font-corbert font-bold">
-              {date}
-            </p>
+            {date && (
+              <span className="inline-block w-fit px-3 py-1 rounded-full text-xs sm:text-sm md:text-base font-corbert font-semibold bg-[#f2c5d3]/50 text-dark-purple/85 shadow-sm">
+                {date}
+              </span>
+            )}
           </div>
         </div>
         {/* DROP DOWN PART */}
@@ -85,7 +100,7 @@ const GameJamEvent: React.FC<EventProps> = ({
           orientation="horizontal"
         >
           <AccordionItem value="item-1">
-            <AccordionTrigger className=" text-left absolute right-10 bottom-5"></AccordionTrigger>
+            <AccordionTrigger className=" text-left absolute right-6 bottom-5"></AccordionTrigger>
             <AccordionContent className="mt-6 xl:mt-10 flex gap-4 xl:gap-6 items-center justify-between 2xl:px-16 lg:px-10 md:px-5 pb-7">
               <div className="grid xl:grid-cols-2 2xl:gap-7 gap-2">
                 <h3 className="text-dark-purple text-lg font-bold">
@@ -130,25 +145,32 @@ const GameJamEvent: React.FC<EventProps> = ({
     <ClientOnly fallback={null}>
       {() => (
         <Drawer>
-          <DrawerTrigger className="flex md:flex-row flex-col bg-wh-full/90 border border-wh/80 rounded-xl md:p-7 p-5 h-fit gap-5 w-full items-center text-left drop-shadow-md">
-            <img
-              src={imageM}
-              alt={title}
-              className="object-contain aspect-[3/2] md:hidden rounded-md"
-            />
+          <DrawerTrigger className="group flex md:flex-row flex-col bg-white/50 backdrop-blur-xl border border-[#f2c5d3]/70 rounded-3xl p-5 md:p-6 h-fit gap-5 w-full items-start text-left hover:-translate-y-1 hover:shadow-xl hover:rotate-[0.5deg] transition-all duration-300">
+            <div
+              className="overflow-hidden rounded-2xl aspect-[3/2] w-full md:hidden relative ring-1 ring-white/50 shadow-md transition-colors duration-300"
+              style={{ backgroundColor: frameColorM }}
+            >
+              <img
+                src={imageM}
+                alt={title}
+                className="w-full h-full object-contain group-hover:scale-110 hover:scale-110 transition duration-300"
+              />
+            </div>
             {/* Drawer for mobile View */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 text-left">
               <div>
-                <h2 className="title sm:text-2xl text-xl text-cgd-pink/85">
+                <h2 className="title sm:text-2xl text-xl text-cgd-pink/85 text-left uppercase">
                   {title}
                 </h2>
-                <h4 className="description sm:text-base text-sm text-dark-purple/90 font-corbert font-bold">
+                <h4 className="description sm:text-base text-sm text-dark-purple/90 font-corbert font-bold text-left">
                   {description}
                 </h4>
               </div>
-              <p className="date sm:text-sm text-xs text-dark-purple/80 font-corbert font-bold">
-                {date}
-              </p>
+              {date && (
+                <span className="inline-block w-fit px-3 py-1 rounded-full text-xs sm:text-sm font-corbert font-semibold bg-[#f2c5d3]/50 text-dark-purple/85 shadow-sm">
+                  {date}
+                </span>
+              )}
             </div>
           </DrawerTrigger>
           <DrawerContent>
@@ -253,7 +275,8 @@ const GameJamEvent: React.FC<EventProps> = ({
                         variant: "ghost",
                       })} w-full rounded-md font-corbert text-base font-extrabold text-dark-purple active:bg-wh`}
                       to={jampage ? jampage : `#`}
-                      target="_blank"
+                      target={isExternalJamPage ? "_blank" : undefined}
+                      rel={isExternalJamPage ? "noopener noreferrer" : undefined}
                     >
                       See more
                     </Link>

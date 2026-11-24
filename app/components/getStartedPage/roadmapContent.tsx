@@ -299,8 +299,8 @@ export default function RoadmapContent({
                   stage.items.map((item, itemIndex) => {
                     const paletteClass =
                       (stageIndex + itemIndex) % 2 === 0
-                        ? "roadmap-item roadmap-item-mint"
-                        : "roadmap-item roadmap-item-lilac";
+                        ? "roadmap-item roadmap-item-pink"
+                        : "roadmap-item roadmap-item-plum";
 
                     const content = (
                       <>

@@ -2,6 +2,7 @@ import React from "react";
 import {useState} from "react";
 import newEvents from "~/siteSettings/hotevents.json";
 import { Link } from "@remix-run/react";
+import { useAverageColor } from "~/lib/useAverageColor";
 
 const NewEventsSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,6 +18,7 @@ const NewEventsSection: React.FC = () => {
   };
   
   const event = newEvents[currentIndex];
+  const frameColor = useAverageColor(event?.img);
 
   return (
     <section className="md:mx-20 mx-6 my-24">
@@ -57,11 +59,11 @@ const NewEventsSection: React.FC = () => {
             w-full max-w-4xl
             flex items-center gap-4 md:flex-row flex-col
             rounded-3xl overflow-hidden
+            group
 
             bg-white/35 backdrop-blur-xl
             border border-[#f2c5d3]/70
-            shadow-[0_6px_16px_rgba(0,0,0,0.15)
-            hover:-translate-y-1 hover:shadow-[0_8px_22px_rgba(0,0,0,0.25)]
+            hover:-translate-y-1 hover:shadow-xl
             hover:rotate-[0.5deg]
             transition-all duration-300
             px-4 py-4">
@@ -80,21 +82,21 @@ const NewEventsSection: React.FC = () => {
           />
 
           {event.img && (
-            <img
-              src={event.img}
-              alt={event.title}
-              className="
-                w-full md:w-56 lg:w-64 xl:w-96 aspect-[4/3] xl:aspect-[5/3]
-                rounded-2xl object-cover object-top
-                flex-shrink-0 relative
-                ring-1 ring-white/50
-                shadow-md"
-              loading="lazy"
-            />
+            <div
+              className="overflow-hidden rounded-2xl w-full md:w-56 lg:w-64 xl:w-96 aspect-[4/3] xl:aspect-[5/3] shrink-0 relative ring-1 ring-white/50 shadow-md transition-colors duration-300"
+              style={{ backgroundColor: frameColor }}
+            >
+              <img
+                src={event.img}
+                alt={event.title}
+                className="w-full h-full object-contain object-top group-hover:scale-110 hover:scale-110 transition duration-300"
+                loading="lazy"
+              />
+            </div>
           )}
 
           <div className="flex flex-col justify-start self-start relative z-10 gap-2 md:py-4">
-            <h3 className="text-dark-purple font-extrabold font-corbert text-3xl sm:text-4xl">
+            <h3 className="title text-3xl sm:text-4xl text-cgd-pink/85 text-left uppercase">
               {event.title}
             </h3>
 

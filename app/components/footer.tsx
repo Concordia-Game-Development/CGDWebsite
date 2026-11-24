@@ -5,7 +5,7 @@ import { socials } from "../siteSettings/socials.json";
 
 const Footer = () => {
   return (
-    <footer className="footer flex lg:flex-row flex-col py-5 px-10 lg:px-14 xl:px-20 justify-between lg:items-center w-full">
+    <footer className="footer mt-auto flex lg:flex-row flex-col py-5 px-10 lg:px-14 xl:px-20 justify-between lg:items-center w-full">
       <div className="lg:basis-1/3">
         <div className="info-wrapper-footer">
           <div className="info">Concordia Game Development</div>

@@ -1,0 +1,17 @@
+{
+  "university": "Concordia University",
+  "building": "Henry F. Hall Building",
+  "introduction": "The Shrekathon will take place at",
+  "rooms": [
+    { "day": "Friday", "room": "H.937" },
+    { "day": "Saturday", "room": "H.937" },
+    { "day": "Sunday", "room": "H.920" }
+  ],
+  "labs": [
+    { "room": "H.962", "type": "Game Engines" },
+    { "room": "H.966", "type": "Game Engines" },
+    { "room": "EV 5.635", "type": "Unreal Workstation", "footnoteMarker": "*" }
+  ],
+  "note": "Computer labs require ENCS accounts to log in. Let us know if you want to use one but have no account.",
+  "workstationFootnote": "* Unreal Workstation available only Saturday and Sunday with the help of Computation Arts Student Society."
+}

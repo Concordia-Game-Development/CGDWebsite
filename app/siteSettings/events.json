@@ -1,55 +1,62 @@
 [
-    {
+  {
     "id": 0,
+    "title": "Meet and Geek 2026",
+    "date": "September 8th, 2026  11PM-5PM",
+    "description": "Kick off the first day of school with Esports Concordia and the Concordia Game Development Club at Meet & Geek!",
+    "location": "4th Space, Concordia University, 1400 Maisonneuve Blvd W, Montreal, QC H3G 1M8"
+  },
+  {
+    "id": 1,
     "title": "Student Game Dev Summit 2026",
     "date": "May 2th, 2026  6PM-9PM",
     "description": "The Student Game Dev Summit is an inter-university event designed to inspire growth and collaboration among students interested in pursuing game development. Whether you’re a programmer, artist, musician, or game designer, this is a space for you to meet people, network, and explore what the future of Quebec’s gaming industry will look like!   ",
     "location": "ETS, 2nd Floor du pavillion E, salon des diplomes E-2033 1220, rue Notre-Dame Ouest Montreal,QC, H3C 1K5"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Shrekathon",
     "date": "March 20th - 22nd 2026",
     "description": "Hosted by Concordia Game Dev Club, Shrekathon is a 48-hour event GameJam. ",
     "location": "1455 Blvd. De Maisonneuve Ouest, Montreal, Quebec H3G 1M8 (Hall Building)"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Line Art Workshop with Dario",
     "date": "February 27th, 2026, 6 PM",
     "description": "Curious about drawing but not sure where to start? Join artist Dario Cimmino for a relaxed, beginner-friendly introduction to line art where you’ll explore digital tips, learn how to draw heads and facial features, and discover helpful tricks to begin your artistic journey.",
     "location": "Room H962, Hall Building 1455 Blvd. de Maisonneuve Ouest, Sir George William Campus"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Procedural Generation with MGD President Zachary Shade",
     "date": " Feb 11, 18 & 25th, 6:00-8:30 PM",
     "description": "Learn how to generate dynamic environments using procedural techniques. Perfect if your into game dev, world-building, or want to make your scenes feel alive",
     "location": "Room H962, Hall Building 1455 Blvd. de Maisonneuve Ouest, Sir George William Campus"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Game Nights",
     "date": "February 20 2026",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
     "description": "Hosted by Concordia Game Dev Club and SCS Concordia, Game Night is an event where students can come together to play games, meet new people, and have fun! All are welcome to join us for an evening of fun and games!"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Zaid Workshop: Introduction to Shaders",
     "date": "Feb 6th, 5 to 8 PM",
     "description": "In this workshop, we will cover the fundamentals of shaders, including how to write and implement them in your projects. By the end of the workshop, you will have a solid understanding of shaders and be able to create your own custom effects.",
     "location": "H962 Hall building, Sir George William Campus, 1455 Boul. de Maissoneuve O."
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Learnathon ",
     "date": "November 7-9, 2025",
     "description": "Hosted by Concordia Game Dev Club, Learnathon is a hands-on event where participants can explore the basics of game development and start building their own projects. Click on the title for more info.",
     "location": "Click on the title for more information."
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Game Night",
     "date": "October 3rd, 2025",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
@@ -57,21 +64,21 @@
     "theme": "Mario Kart World - race, drift, and dodge those shells!, /nSuper Smash Bros. Ultimate - battle it out for glory!"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Lizard Lounge",
     "date": "October 3rd, 2025",
     "location": "Reggies Bar",
     "description": "A social event hosted by Space Concordia in collaboration with the Concordia Game Development Club, themed around the Halo"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Meet & Geek",
     "date": "September 19th, 2025",
     "location": "JMSB 9th floor, Concordia SGW",
     "description": "Hosted by Concordia Game Developement Club, a social event where students can come together and meet the CGD team, learn about the club, and play some games!"
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Game Night",
     "date": "August 31st, 2025",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
@@ -79,7 +86,7 @@
     "theme": "Mario Kart World - race, drift, and dodge those shells!, /nSuper Smash Bros. Ultimate - battle it out for glory!"
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "Global Game Jam 2025",
     "jampage": "https://itch.io/jam/cgd-ggj-25",
     "date": "Jan 20-26, 2025",
@@ -110,7 +117,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "Global Game Jam 2024",
     "jampage": "https://itch.io/jam/cgd-jam-2024",
     "date": "Jan 26-28, 2024",
@@ -141,7 +148,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "CGD Jam Fall 2023",
     "jampage": "https://itch.io/jam/cgd-jam-2023",
     "date": "Nov 3-5, 2023",
@@ -172,14 +179,14 @@
     ]
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Megamigs 2022",
     "date": "Oct 19-22, 2022",
     "description": "Megamigs is a 4-day event that brings together the video game industry and the public. It is a unique opportunity to meet and exchange with the people who make the video game industry shine.",
     "location": "Palais des Congrès de Montréal"
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "CGD Jam Fall 2022",
     "jampage": "https://itch.io/jam/cgd-jam",
     "date": "Oct 14-16, 2022",
@@ -208,5 +215,13 @@
         "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe"
       }
     ]
+  },
+  {
+    "id": 17,
+    "title": "Cosmic Jam 2026",
+    "jampage": "/cosmicjam",
+    "date": "Oct 9 - 11th 2026",
+    "description": "Hosted by Concordia Game Development, Cosmic Jam is a 48-hour game jam.",
+    "location": "1455 Blvd. De Maisonneuve Ouest, Montreal, QC H3G 1M8, Canada"
   }
 ]

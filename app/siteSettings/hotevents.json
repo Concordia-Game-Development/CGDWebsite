@@ -4,14 +4,23 @@
     
     {
         "id": 0,
-        "title": "Cosmic Jam",
+        "title": "Cosmic Jam 2026",
         "date": "October 9-11, 2026",
         "img": "assets/NewEvents/CosmicJam_Square.png",
+        "link": "/cosmicjam",
+        "target": ""
+    },
+    {
+        
+        "id": 1,
+        "title": "Meet and Geek 2026",
+        "date": "September 8, 2026",
+        "img": "assets/NewEvents/MeetAndGeek2026.jpg",
         "link": "/events",
         "target": ""
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "Game Night",
         "date": "September 25, 2026",
         "img": "assets/NewEvents/game_night_sep25.jpg",
