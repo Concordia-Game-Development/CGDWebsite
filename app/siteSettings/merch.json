@@ -1,4 +1,10 @@
 {
+  "accessGate": {
+    "enabled": true,
+    "code": "CGD2026",
+    "title": "Merch Coming Soon",
+    "subtitle": "Our merch store isn't live just yet. Enter the access code below to preview the page."
+  },
   "hero": {
     "title": "Wear the Jam.",
     "subtitle": "Hoodies, tees, stickers and more, designed by club members. Every purchase helps fund CGD game jams and events.",

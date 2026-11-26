@@ -86,7 +86,15 @@ export interface MerchOrderSectionDTO extends MerchSectionCopyDTO {
   readonly zeffyCampaign: ZeffyCampaignDTO;
 }
 
+export interface MerchAccessGateDTO {
+  readonly enabled: boolean;
+  readonly code: string;
+  readonly title: string;
+  readonly subtitle: string;
+}
+
 export interface MerchPageConfigDTO {
+  readonly accessGate?: MerchAccessGateDTO;
   readonly hero: MerchHeroDTO;
   readonly catalogSection: MerchSectionCopyDTO;
   readonly orderSection: MerchOrderSectionDTO;

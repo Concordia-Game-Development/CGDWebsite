@@ -3,6 +3,7 @@ import type {
   ApparelMerchItemDTO,
   BaseMerchItemDTO,
   ColorSwatch,
+  MerchAccessGateDTO,
   MerchBadge,
   MerchCategory,
   MerchHeroDTO,
@@ -174,8 +175,32 @@ export class SizeGuide {
   }
 }
 
+/** Controls pre-launch access gating for the merch preview page. */
+export class MerchAccessGate {
+  readonly enabled: boolean;
+  readonly title: string;
+  readonly subtitle: string;
+  readonly storageKey = "cgd-merch-access-unlocked";
+  private readonly code: string;
+
+  constructor(dto?: MerchAccessGateDTO) {
+    this.enabled = dto?.enabled ?? false;
+    this.title = dto?.title ?? "";
+    this.subtitle = dto?.subtitle ?? "";
+    this.code = (dto?.code ?? "").trim().toUpperCase();
+  }
+
+  verifyCode(input: string): boolean {
+    if (!this.enabled) {
+      return true;
+    }
+    return input.trim().toUpperCase() === this.code;
+  }
+}
+
 /** Aggregate root providing typed access to merch copy, products, size guide, and Zeffy config. */
 export class MerchCatalog {
+  readonly accessGate: MerchAccessGate;
   readonly hero: MerchHeroDTO;
   readonly catalogSection: MerchSectionCopyDTO;
   readonly orderSection: MerchOrderSectionDTO;
@@ -187,6 +212,7 @@ export class MerchCatalog {
     config: MerchPageConfigDTO,
     products: readonly MerchProduct[]
   ) {
+    this.accessGate = new MerchAccessGate(config.accessGate);
     this.hero = config.hero;
     this.catalogSection = config.catalogSection;
     this.orderSection = config.orderSection;

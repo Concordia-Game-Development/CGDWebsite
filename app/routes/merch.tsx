@@ -4,6 +4,7 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import "app/css/animations.css";
 import "app/css/background-animation.css";
 import "app/css/merch.css";
+import { MerchAccessGate } from "~/components/merch/MerchAccessGate";
 import { MerchCard } from "~/components/merch/MerchCard";
 import { MerchDetailDrawer } from "~/components/merch/MerchDetailDrawer";
 import { MerchHero } from "~/components/merch/MerchHero";
@@ -79,68 +80,70 @@ export default function Merch() {
 
   return (
     <div className="merch-page">
-      <main className="relative z-10 mx-auto max-w-6xl px-5 sm:px-8 pb-20 space-y-16">
-        <MerchHero
-          hero={merchCatalog.hero}
-          featuredProduct={merchCatalog.getFeaturedProduct()}
-          onShopClick={scrollToOrderForm}
-          onSizeGuideClick={handleOpenSizeGuideFromHero}
-          onSelectProduct={handleSelectProduct}
+      <MerchAccessGate gate={merchCatalog.accessGate}>
+        <main className="relative z-10 mx-auto max-w-6xl px-5 sm:px-8 pb-20 space-y-16">
+          <MerchHero
+            hero={merchCatalog.hero}
+            featuredProduct={merchCatalog.getFeaturedProduct()}
+            onShopClick={scrollToOrderForm}
+            onSizeGuideClick={handleOpenSizeGuideFromHero}
+            onSelectProduct={handleSelectProduct}
+          />
+
+          <section>
+            <div className="mb-6">
+              <h2 className="font-ls uppercase text-4xl sm:text-5xl text-dark-purple">
+                {merchCatalog.catalogSection.title}
+              </h2>
+              <p className="font-corbert font-semibold text-base text-dark-purple/80 mt-1">
+                {merchCatalog.catalogSection.subtitle}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6">
+              {merchCatalog.getAllProducts().map((product) => (
+                <MerchCard
+                  key={product.id}
+                  product={product}
+                  onSelect={handleSelectProduct}
+                />
+              ))}
+            </div>
+          </section>
+
+          <ZeffyOrderSection
+            section={merchCatalog.orderSection}
+            campaign={merchCatalog.campaign}
+          />
+        </main>
+
+        <MerchDetailDrawer
+          product={selectedProduct}
+          initialImageIndex={selectedImageIndex}
+          open={selectedProduct !== null}
+          onOpenChange={(open) => {
+            if (!open) {
+              setSelectedProduct(null);
+            }
+          }}
+          onOrderNow={handleOrderFromDrawer}
+          onOpenSizeGuide={handleOpenSizeGuideFromCard}
         />
 
-        <section>
-          <div className="mb-6">
-            <h2 className="font-ls uppercase text-4xl sm:text-5xl text-dark-purple">
-              {merchCatalog.catalogSection.title}
-            </h2>
-            <p className="font-corbert font-semibold text-base text-dark-purple/80 mt-1">
-              {merchCatalog.catalogSection.subtitle}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6">
-            {merchCatalog.getAllProducts().map((product) => (
-              <MerchCard
-                key={product.id}
-                product={product}
-                onSelect={handleSelectProduct}
-              />
-            ))}
-          </div>
-        </section>
-
-        <ZeffyOrderSection
-          section={merchCatalog.orderSection}
-          campaign={merchCatalog.campaign}
+        <SizeGuideDrawer
+          sizeGuide={merchCatalog.sizeGuide}
+          open={isSizeGuideOpen}
+          onOpenChange={(open) => {
+            setIsSizeGuideOpen(open);
+            if (!open) {
+              setSizeGuideReturnTarget(null);
+            }
+          }}
+          onBack={
+            sizeGuideReturnTarget ? handleBackToCardFromSizeGuide : undefined
+          }
         />
-      </main>
-
-      <MerchDetailDrawer
-        product={selectedProduct}
-        initialImageIndex={selectedImageIndex}
-        open={selectedProduct !== null}
-        onOpenChange={(open) => {
-          if (!open) {
-            setSelectedProduct(null);
-          }
-        }}
-        onOrderNow={handleOrderFromDrawer}
-        onOpenSizeGuide={handleOpenSizeGuideFromCard}
-      />
-
-      <SizeGuideDrawer
-        sizeGuide={merchCatalog.sizeGuide}
-        open={isSizeGuideOpen}
-        onOpenChange={(open) => {
-          setIsSizeGuideOpen(open);
-          if (!open) {
-            setSizeGuideReturnTarget(null);
-          }
-        }}
-        onBack={
-          sizeGuideReturnTarget ? handleBackToCardFromSizeGuide : undefined
-        }
-      />
+      </MerchAccessGate>
 
       <div className="background h-full">
         <span>
