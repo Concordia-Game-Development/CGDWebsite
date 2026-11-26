@@ -67,12 +67,12 @@
       "description": "Soft everyday unisex cotton tee featuring the classic Concordia Game Development print. Designed by club members for jams, classes, and meetups.",
       "images": [
         {
-          "src": "/assets/merch/cgd-classic-tee-plum-front.svg",
+          "src": "/assets/staff/template.png",
           "alt": "CGD Classic Tee in CGD Plum — Front view",
           "colourway": "CGD Plum"
         },
         {
-          "src": "/assets/merch/cgd-classic-tee-plum-back.svg",
+          "src": "/assets/staff/template.png",
           "alt": "CGD Classic Tee in CGD Plum — Back view",
           "colourway": "CGD Plum"
         }
@@ -94,22 +94,22 @@
       "description": "Cozy heavyweight pullover hoodie celebrating CGD's motto: Building dreams, level by level.",
       "images": [
         {
-          "src": "/assets/merch/level-by-level-hoodie-black-front.svg",
+          "src": "/assets/staff/template.png",
           "alt": "\"Level by Level\" Hoodie in Midnight Black — Front view",
           "colourway": "Midnight Black"
         },
         {
-          "src": "/assets/merch/level-by-level-hoodie-black-back.svg",
+          "src": "/assets/staff/template.png",
           "alt": "\"Level by Level\" Hoodie in Midnight Black — Back view",
           "colourway": "Midnight Black"
         },
         {
-          "src": "/assets/merch/level-by-level-hoodie-pink-front.svg",
+          "src": "/assets/staff/template.png",
           "alt": "\"Level by Level\" Hoodie in CGD Pink — Front view",
           "colourway": "CGD Pink"
         },
         {
-          "src": "/assets/merch/level-by-level-hoodie-pink-back.svg",
+          "src": "/assets/staff/template.png",
           "alt": "\"Level by Level\" Hoodie in CGD Pink — Back view",
           "colourway": "CGD Pink"
         }
@@ -131,16 +131,16 @@
       "description": "Set of 6 die-cut vinyl stickers designed by CGD artists — weatherproof and laptop-ready.",
       "images": [
         {
-          "src": "/assets/merch/pixel-sticker-pack-sheet.svg",
+          "src": "/assets/staff/template.png",
           "alt": "Pixel Sticker Pack (6) — Full sticker set"
         },
         {
-          "src": "/assets/merch/pixel-sticker-pack-closeup.svg",
+          "src": "/assets/staff/template.png",
           "alt": "Pixel Sticker Pack (6) — Detail preview"
         }
       ],
       "ctaLabel": "Order on Store",
-      "packDetails": "Includes 6 die-cut matte vinyl stickers (~2.5–3 in each)."
+      "packDetails": "Includes 6 die-cut matte vinyl stickers (~2.5-3 in each)."
     }
   ]
 }
