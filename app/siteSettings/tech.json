@@ -13,16 +13,16 @@
       "img": "assets/staff/ana.jpg"
     },
     {
-      "name": "Arman Emami",
-      "position": "Developer",
-      "id": "3",
-      "img": "assets/staff/armanEmami.jpg"
-    },
-    {
       "name": "Marcel Taveau",
       "position": "Developer",
-      "id": "4",
+      "id": "3",
       "img": "assets/staff/Marcel.png"
+    },
+    {
+      "name": "Khujista Faqiri",
+      "position": "Developer",
+      "id": "4",
+      "img": "assets/staff/KhujistaFaqiri.png"
     }
   ]
-}
+} 
