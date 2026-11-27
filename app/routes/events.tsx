@@ -27,7 +27,7 @@ import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Dario Workshop.png";
 import rosieworkshop from "assets/icons/Rose Workshop.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
-import gamenight from "assets/icons/gamenight-feb.png";
+import gamenight from "public/assets/NewEvents/game_night_dec4.png";
 import GameSummit from "assets/icons/SGDS.jpg";
 import CosmicJam from "assets/icons/CosmicJam.png";
 import recurringevents from "~/siteSettings/recurringevents.json";
